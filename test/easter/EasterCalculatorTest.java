@@ -3,6 +3,10 @@ package easter;
 import org.junit.*;
 
 public class EasterCalculatorTest{
+    @Test
+    public void easterDate() throws Exception {
+    }
+
     @BeforeClass
     public static void setUpBeforeClass() throws Exception{
         System.out.println("@BeforeClass");
