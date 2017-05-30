@@ -1,10 +1,25 @@
 package easter;
 
 import org.junit.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+import java.util.Collection;
+
+@RunWith(Parameterized.class)
 public class EasterCalculatorTest{
-    @Test
-    public void easterDate() throws Exception {
+
+    private int year;
+    private MyDate expectedDate;
+
+    public EasterCalculatorTest(int year, MyDate expectedDate) {
+        this.year = year;
+        this.expectedDate = expectedDate;
+    }
+
+    @Parameterized.Parameters
+    public static Collection<Object[]> data() {
+        
     }
 
     @BeforeClass
