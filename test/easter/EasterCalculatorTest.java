@@ -26,4 +26,9 @@ public class EasterCalculatorTest{
     public static void tearDown() throws Exception{
         System.out.println("@After");
     }
+
+    @Test
+    public void easterDate1() throws Exception {
+
+    }
 }
