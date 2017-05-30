@@ -4,29 +4,11 @@ import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
 
-@RunWith(Parameterized.class)
+
 public class EasterCalculatorTest{
 
-    private int year;
-    private MyDate expectedDate;
 
-    public EasterCalculatorTest(int year, MyDate expectedDate) {
-        this.year = year;
-        this.expectedDate = expectedDate;
-    }
-
-    @Parameterized.Parameters
-    public static Collection<Object[]> data() {
-        List <Objects[]> arrayYears = new LinkedList<Objects[]>();
-        //arrayYears.add();
-        
-        return null;
-    }
 
 
     @BeforeClass
@@ -52,5 +34,21 @@ public class EasterCalculatorTest{
     @Test
     public void easterDate1() throws Exception {
 
+    }
+
+
+    //test 11 -19
+    @Test
+    public void easterDate11() throws Exception {
+/*    	int firstDate = new Date (1700,06,20);
+		Date expectedDate = new Date (1700,06,21);
+		Assert.assertEquals(expectedDate, firstDate.nextDate());*/
+        System.out.println("hiiiii");
+    }
+    @Test
+    public void easterDate12() throws Exception {
+/*    	int firstDate = new Date (1700,06,20);
+		Date expectedDate = new Date (1700,06,21);
+		Assert.assertEquals(expectedDate, firstDate.nextDate());*/
     }
 }
