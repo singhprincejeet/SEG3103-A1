@@ -5,6 +5,9 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
 
 @RunWith(Parameterized.class)
 public class EasterCalculatorTest{
@@ -19,8 +22,12 @@ public class EasterCalculatorTest{
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
+        List <Objects[]> arrayYears = new LinkedList<Objects[]>();
+        //arrayYears.add();
         
+        return null;
     }
+
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception{
