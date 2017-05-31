@@ -1,15 +1,8 @@
 package easter;
 
 import org.junit.*;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
-
-
 
 public class EasterCalculatorTest{
-
-
-
 
     @BeforeClass
     public static void setUpBeforeClass() throws Exception{
@@ -17,7 +10,7 @@ public class EasterCalculatorTest{
     }
 
     @Before
-    public static void setUp() throws Exception{
+    public void setUp() throws Exception{
         System.out.println("@Before");
     }
 
@@ -27,13 +20,14 @@ public class EasterCalculatorTest{
     }
 
     @After
-    public static void tearDown() throws Exception{
+    public void tearDown() throws Exception{
         System.out.println("@After");
     }
 
-    @Test
+    @Test(expected = NullPointerException.class)
     public void easterDate1() throws Exception {
-
+        int year = 1899;
+        EasterCalculator.easterDate(year);
     }
 
 
