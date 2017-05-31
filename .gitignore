@@ -122,6 +122,7 @@ fabric.properties
 # *.iml
 # modules.xml
 .idea/misc.xml
+.idea/SEG3101-A1.xml
 # *.ipr
 
 # Sonarlint plugin
