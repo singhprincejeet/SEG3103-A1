@@ -25,10 +25,15 @@ public class EasterCalculatorTest{
     }
 
     @Test()
+    public void easterDate0() throws Exception {
+        int year = 1750;
+        Assert.assertNull(EasterCalculator.easterDate(year));
+    }
+
+    @Test()
     public void easterDate1() throws Exception {
         int year = 1899;
-        MyDate expectedDate = null;
-        Assert.assertEquals(expectedDate, EasterCalculator.easterDate(year));
+        Assert.assertNull(EasterCalculator.easterDate(year));
     }
 
     @Test
@@ -84,9 +89,8 @@ public class EasterCalculatorTest{
     @Test
     public void easterDate7() throws Exception {
         int year = 2101;
-        MyDate expectedDate = null;
         MyDate actualDate = EasterCalculator.easterDate(year);
-        Assert.assertEquals(expectedDate, actualDate);
+        Assert.assertNull(actualDate);
     }
 
     @Test
@@ -177,6 +181,11 @@ public class EasterCalculatorTest{
         int year = 2077;
         String expectedDate = new MyDate ("April",11).toString();
         Assert.assertEquals(expectedDate, EasterCalculator.easterDate(2077).toString());
+    }
+    @Test
+    public void easterDate20() throws Exception {
+        int year = 2200;
+        Assert.assertNull(EasterCalculator.easterDate(year));
     }
 
 
